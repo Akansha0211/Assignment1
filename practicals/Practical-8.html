@@ -110,12 +110,49 @@
 
         }
         .box{
-            background-color: rgba(230, 59, 17, 0.959);
+            /* background-color: rgba(230, 59, 17, 0.959); */
             height: 100%;
             width: 20%;
             margin-right: 10px;
             margin-left: 10px;
+            border: 1px solid blue;
         } 
+        
+        .section3 div{
+            background-color: grey;
+            margin: 10px;
+            width:20%;
+            height: 390px;
+            float: left;
+            border-radius: 10px;
+            overflow: hidden;
+            
+            /* padding: 10px;  */
+            /* box-shadow:grey;   */
+    
+        }
+        .section3 div img {
+            /* display: block; */
+            width: 100%;
+            height: 200px;
+            /* margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px; */
+            border-radius: 10px;
+            
+        }
+        .section3 div a{
+            
+            background-color:blueviolet;
+            color: white;
+            text-decoration: none;            
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 10px;
+          
+        }
         .footer{
             width: 100%;
             height:70px;
@@ -125,8 +162,7 @@
             align-items: center;
             color: floralwhite;
             font-size: 20px;
-        } 
-    
+        }  
     </style>
 </head>
 <body>
@@ -175,15 +211,39 @@
                 </div> 
             </div>           
         </div>
-        <h3>Section-3</h3>
+        <h3>About Technologies</h3>       
             <div class="section3">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+                <div>
+                    <img src="../img/html.png">
+                    <h3 style="text-align: center;">Introduction to HTML</h3>
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facilis sed fugit ratione, harum provident debitis odit similique. Veniam, vero!</p>
+                    <a href="practical-5-html.htm">Read More</a>                                        
+                </div>  
+                <div >
+                    <img src="../img/css.png">
+                    <h3 style="text-align: center;">Introduction to CSS</h3>
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facilis sed fugit ratione, harum provident debitis odit similique. Veniam, vero!</p>
+                    
+                    
+                    <a href="practical-5-css.htm">Read More</a>
+                   
+                </div>
+                <div>
+                    <img src="../img/js.png">
+                    <h3 style="text-align: center;">Introduction to JavaScript</h3>
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facilis sed fugit ratione, harum provident debitis odit similique. Veniam, vero!</p>
+                    <a href="practical-5-js.htm">Read More</a>
+                   
+                </div>
+                <div >
+                    <img src="../img/bootstrap.png">
+                    <h3 style="text-align: center;">Introduction to Bootstrap</h3>
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facilis sed fugit ratione, harum provident debitis odit similique. Veniam, vero!</p>                    
+                    <a href="practical-5-boostrap.htm">Read More</a>                       
+                </div>
             </div>
-        <h3>Section-4</h3>
-        <div class="footer">Footer</div>
+            <h3>Contact</h3>
+            <div class="footer"></div>
     </div>
 </body>
 </html>

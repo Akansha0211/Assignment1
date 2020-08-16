@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical-8</title>
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         .container{
             margin : 40px;
             padding :10px;
@@ -23,9 +26,18 @@
         }
         ul{
             list-style-type: none;
+            
         }
         ul li{
             display: inline-block;
+            text-decoration: none;              
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+            margin-left: 80px;
+            margin-right: 80px;
+            font-size: 22px;
         }
         .banner{
             background-color: rgba(0, 162, 255, 0.726);
@@ -153,7 +165,12 @@
             padding: 10px 10px;
           
         }
+        h1{
+            text-align: center;
+            margin-top: 300px;
+        }
         .footer{
+            margin-top: 20px;
             width: 100%;
             height:70px;
             background-color:palevioletred;
@@ -161,26 +178,33 @@
             justify-content: center;
             align-items: center;
             color: floralwhite;
+            font-size: 20px;           
+        } 
+        .txt{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            color: black;
             font-size: 20px;
-        }  
+        } 
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <ul>
-                <li>HOME</li>
-                <li>ABOUT US</li>
-                <li>TEAM</li>
-                <li>TECHNOLOGIES</li>
-                <li>CONTACT</li>
+                <li><a href="#Home">HOME</a></li>
+                <li><a href="#AbtUs">ABOUT US</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#Tech">TECHNOLOGIES</a></li>
+                <li><a href="#Contct">CONTACT</a></li>
             </ul>
         </div>
-        <div class="banner">
+        <div class="banner" id="Home">
             <img src="../img/emile-perron-xrVDYZRGdw4-unsplash.jpg">
         </div>
         <h3>Team Members</h3>
-        <div class="section1">            
+        <div class="section1" id="team">            
             <div class="circle">
                 <img src="../img/1.png">
             </div>
@@ -195,9 +219,16 @@
             </div>
         </div>
         <h3>Section-2</h3>
-        <div class="section2">            
+        <div class="section2" id="AbtUs">            
             <div class="smllCont">
-                <div class="Main-Content"></div>                           
+                <div class="Main-Content">
+                    <!-- <h3>About Projects</h3><br> -->
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus tenetur assumenda fugit maxime iusto ipsa explicabo tempora praesentium cupiditate necessitatibus 
+                    temporibus atque architecto totam reprehenderit, sed corrupti dolores deserunt dignissimos beatae iste dicta repudiandae suscipit. Minus, totam rerum aliquid ex voluptate 
+                    aliquam consequuntur harum cum natus cupiditate illum esse vitae nulla adipisci! Quasi ipsum dicta neque veniam alias quo modi deleniti? Nobis impedit accusantium vel, placeat
+                     consequuntur saepe fuga aliquam quis quia magnam debitis exercitationem, illo ipsum sint officiis maiores architecto? Non veritatis sunt excepturi recusandae magni velit perspiciatis 
+                     fugit? Ducimus labore, nemo sunt eum earum in maxime quisquam?
+                </div>                           
                 <div class="articles">
                     <div class="article">
                         <img src="../img/p1.jpg">
@@ -212,7 +243,7 @@
             </div>           
         </div>
         <h3>About Technologies</h3>       
-            <div class="section3">
+            <div class="section3" id="Tech">
                 <div>
                     <img src="../img/html.png">
                     <h3 style="text-align: center;">Introduction to HTML</h3>
@@ -241,9 +272,13 @@
                     <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facilis sed fugit ratione, harum provident debitis odit similique. Veniam, vero!</p>                    
                     <a href="practical-5-boostrap.htm">Read More</a>                       
                 </div>
-            </div>
-            <h3>Contact</h3>
-            <div class="footer"></div>
+            </div>           
     </div>
+    <h1 style="text-align: center;">Contact</h1>
+    <div class="footer" id="Contct">
+        <div class="txt">Website Template For Practical-8</div><br>
+        <br>
+        <a href="#Home">Back to Top</a>
+    </div>    
 </body>
 </html>

@@ -11,14 +11,17 @@
             box-sizing: border-box;
         }
         html{
-            scroll-padding-top: 200px;
+            
             scroll-behavior: smooth;
+            scroll-padding-top: 200px;
         }
         .container{
            width: 100%;
            margin: auto;
         }
-        .show-btn,.hide-btn{
+        .show-btn,
+        .hide-btn
+        {
             font-size: 30px;
             color: white;
             line-height: 90px;
@@ -497,6 +500,7 @@
             text-decoration: underline;
             font-family: cursive;
         }
+        /* Query 1 */
         @media(min-width: 913px) and (max-width: 1091px){
             .menu li a{
                 font-size: 23px;
@@ -514,6 +518,7 @@
             }
 
         }
+        /* Query 2 */
         @media(min-width: 780px) and (max-width: 930px){
             .menu li{
                 display: block;
@@ -544,7 +549,7 @@
                 width: 100%;
                 height:98%;
                 right: -100%;
-                 margin: 0px 0px;
+                margin: 0px 0px;
                 transition: 0.7s;
                 background-color:black;
                 position:fixed;
@@ -573,6 +578,18 @@
                 font-family:unset;
             }
             .header{
+                /* display: flex;
+                margin-bottom: 15px;
+                background-size: cover;
+                width: 100%;
+                height: 570px; */
+                width: 100%;
+                background-color:black;
+                top: 0;
+                position: sticky;
+                height: 90px;
+            }
+            .banner{
                 display: flex;
                 margin-bottom: 15px;
                 background-size: cover;
@@ -615,7 +632,7 @@
 
             }
             .left p{
-                 padding: 20px;
+                padding: 20px;
                 font-size: 20px;
                 word-spacing: 3px;
                 text-align: justify;
@@ -664,6 +681,7 @@
             }
        
         }
+        /* Query 3 */
         @media(min-width: width 0px) and(max-width: 800px){
             .menu li{
                 display: block;

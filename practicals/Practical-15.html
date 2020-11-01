@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-15</title>
+    <style>
+        body
+        {
+            background-color: grey;
+        }
+        p
+        {
+            color: white;
+            margin: 10px auto;
+            
+            text-align: center;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+        .container{
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .btn{
+            padding: 10px 40px 10px 40px;
+            color: black;
+            background-color: yellowgreen;
+            /* border: none;
+            outline: none; */
+        }
+        .result{
+            font-size: 50px;
+            margin: 20px;
+            color: yellowgreen;
+            
+        }
+        
+
+        /* #btn1
+        {
+            position: relative;
+            
+            width: 50px;
+            height: 50px;
+            background-color: yellowgreen;
+            display: block;
+            margin: 10px auto;
+            border: none;
+            outline: none;
+
+        }
+        #btn2
+        {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background-color: yellowgreen;
+            
+            
+            float: left;
+            
+            
+        } */
+    </style>
+</head>
+<body>
+    <p>COUNTER</p>
+    <div class="container">        
+        <button class="btn" id="btn1" onclick="decre()" >-</button>
+        <div class="result" id="count">0</div>
+        <button class="btn" id="btn2"onclick="incre()">+</button>
+    </div>   
+
+    <script>
+        var cnt = 0;
+        function incre(){
+            document.getElementById('btn2');
+            cnt++;
+            document.getElementById('count').innerHTML = cnt;
+        }
+        function decre(){
+            if(cnt == 0){
+                document.getElementById('btn1').disabled = true;
+            }
+            else{
+                document.getElementById('btn1');
+                cnt--;
+                document.getElementById('count').innerHTML = cnt;
+            }
+        }
+        
+    </script>
+</body>
+</html>
